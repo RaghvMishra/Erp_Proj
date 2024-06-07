@@ -753,6 +753,7 @@
       <DependentUpon>CentralDBEntities.edmx</DependentUpon>
       <LastGenOutput>CentralDBEntities.Context.cs</LastGenOutput>
     </Content>
+    <Content Include="Database\CentralDBEntities.edmx.sql" />
     <Content Include="Database\CentralDBEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CentralDBEntities.edmx</DependentUpon>

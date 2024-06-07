@@ -1546,6 +1546,14 @@
         API_PHOTO_URL: 'http://localhost:58580/Upload/AllPhotos/',
         APPLICATION_VERSION: '1.0.0',
         ApplicationId: 1 //HiWork ID
+
+
+        //API_BASE_URL: 'https://localhost:56198/',
+        ////API_BASE_URL: 'https://163.47.35.165:8081/',
+        //API_PHOTO_URL: 'https://localhost:56198/Upload/AllPhotos/',
+        //APPLICATION_VERSION: '1.0.0',
+        //ApplicationId: 1 //HiWork ID
+
     });
     /* Notification Constants
     ======================================================*/

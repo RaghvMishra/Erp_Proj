@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Dev Project\HiWork-ERP\trunk\dev\HiWork.DAL\Database\CentralDBEntities.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\Projects\ERP\ERP\New folder\HiWork\HiWork.DAL\Database\CentralDBEntities.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

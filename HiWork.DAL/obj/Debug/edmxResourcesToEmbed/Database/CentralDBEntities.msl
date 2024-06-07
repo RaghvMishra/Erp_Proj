@@ -2,8 +2,8 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="CentralDBModelStoreContainer" CdmEntityContainer="CentralDBEntities">
     <EntitySetMapping Name="AccessLogs">
-      <EntityTypeMapping TypeName="CentralDBModel.AccessLog">
-        <MappingFragment StoreEntitySet="AccessLog">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.AccessLog)">
+        <MappingFragment StoreEntitySet="AccessLogs">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="PersonId" ColumnName="PersonId" />
@@ -16,8 +16,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AdditionalOperationPermissions">
-      <EntityTypeMapping TypeName="CentralDBModel.AdditionalOperationPermission">
-        <MappingFragment StoreEntitySet="AdditionalOperationPermission">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.AdditionalOperationPermission)">
+        <MappingFragment StoreEntitySet="AdditionalOperationPermissions">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="ScreenOperationId" ColumnName="ScreenOperationId" />
@@ -32,8 +32,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AdditionalScreenPermissions">
-      <EntityTypeMapping TypeName="CentralDBModel.AdditionalScreenPermission">
-        <MappingFragment StoreEntitySet="AdditionalScreenPermission">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.AdditionalScreenPermission)">
+        <MappingFragment StoreEntitySet="AdditionalScreenPermissions">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="ScreenId" ColumnName="ScreenId" />
@@ -49,7 +49,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AdvertizementSettings">
-      <EntityTypeMapping TypeName="CentralDBModel.AdvertizementSetting">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.AdvertizementSetting)">
         <MappingFragment StoreEntitySet="AdvertizementSettings">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title_en" ColumnName="Title_en" />
@@ -79,8 +79,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Applications">
-      <EntityTypeMapping TypeName="CentralDBModel.Application">
-        <MappingFragment StoreEntitySet="Application">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Application)">
+        <MappingFragment StoreEntitySet="Applications">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -97,8 +97,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Companies">
-      <EntityTypeMapping TypeName="CentralDBModel.Company">
-        <MappingFragment StoreEntitySet="Company">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Company)">
+        <MappingFragment StoreEntitySet="Companies">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
           <ScalarProperty Name="CompanyTypeID" ColumnName="CompanyTypeID" />
@@ -238,7 +238,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Company_AgencyPrice">
-      <EntityTypeMapping TypeName="CentralDBModel.Company_AgencyPrice">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Company_AgencyPrice)">
         <MappingFragment StoreEntitySet="Company_AgencyPrice">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
@@ -254,7 +254,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Company_Department">
-      <EntityTypeMapping TypeName="CentralDBModel.Company_Department">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Company_Department)">
         <MappingFragment StoreEntitySet="Company_Department">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
@@ -311,7 +311,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Company_TransproPartner">
-      <EntityTypeMapping TypeName="CentralDBModel.Company_TransproPartner">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Company_TransproPartner)">
         <MappingFragment StoreEntitySet="Company_TransproPartner">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
@@ -431,8 +431,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyAgentBusinesses">
-      <EntityTypeMapping TypeName="CentralDBModel.CompanyAgentBusiness">
-        <MappingFragment StoreEntitySet="CompanyAgentBusiness">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.CompanyAgentBusiness)">
+        <MappingFragment StoreEntitySet="CompanyAgentBusinesses">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
           <ScalarProperty Name="AgentBusinessID" ColumnName="AgentBusinessID" />
@@ -441,7 +441,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyAgentCharacterstics">
-      <EntityTypeMapping TypeName="CentralDBModel.CompanyAgentCharacterstic">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.CompanyAgentCharacterstic)">
         <MappingFragment StoreEntitySet="CompanyAgentCharacterstics">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
@@ -451,8 +451,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyAgentDesignations">
-      <EntityTypeMapping TypeName="CentralDBModel.CompanyAgentDesignation">
-        <MappingFragment StoreEntitySet="CompanyAgentDesignation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.CompanyAgentDesignation)">
+        <MappingFragment StoreEntitySet="CompanyAgentDesignations">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
           <ScalarProperty Name="AgentDesignationID" ColumnName="AgentDesignationID" />
@@ -461,8 +461,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyBusinessHistories">
-      <EntityTypeMapping TypeName="CentralDBModel.CompanyBusinessHistory">
-        <MappingFragment StoreEntitySet="CompanyBusinessHistory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.CompanyBusinessHistory)">
+        <MappingFragment StoreEntitySet="CompanyBusinessHistories">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
           <ScalarProperty Name="AppointmentDate" ColumnName="AppointmentDate" />
@@ -507,8 +507,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyBusinessInformations">
-      <EntityTypeMapping TypeName="CentralDBModel.CompanyBusinessInformation">
-        <MappingFragment StoreEntitySet="CompanyBusinessInformation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.CompanyBusinessInformation)">
+        <MappingFragment StoreEntitySet="CompanyBusinessInformations">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
           <ScalarProperty Name="BusinessInfo_en" ColumnName="BusinessInfo_en" />
@@ -542,8 +542,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyCooperativeInfoes">
-      <EntityTypeMapping TypeName="CentralDBModel.CompanyCooperativeInfo">
-        <MappingFragment StoreEntitySet="CompanyCooperativeInfo">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.CompanyCooperativeInfo)">
+        <MappingFragment StoreEntitySet="CompanyCooperativeInfoes">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
           <ScalarProperty Name="IsTranslationCompany" ColumnName="IsTranslationCompany" />
@@ -556,8 +556,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyIndustryClassifications">
-      <EntityTypeMapping TypeName="CentralDBModel.CompanyIndustryClassification">
-        <MappingFragment StoreEntitySet="CompanyIndustryClassification">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.CompanyIndustryClassification)">
+        <MappingFragment StoreEntitySet="CompanyIndustryClassifications">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
           <ScalarProperty Name="IndustryClassificationID" ColumnName="IndustryClassificationID" />
@@ -571,7 +571,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyRFMAnalysis">
-      <EntityTypeMapping TypeName="CentralDBModel.CompanyRFMAnalysi">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.CompanyRFMAnalysi)">
         <MappingFragment StoreEntitySet="CompanyRFMAnalysis">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
@@ -593,8 +593,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyShares">
-      <EntityTypeMapping TypeName="CentralDBModel.CompanyShare">
-        <MappingFragment StoreEntitySet="CompanyShare">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.CompanyShare)">
+        <MappingFragment StoreEntitySet="CompanyShares">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="ShareType" ColumnName="ShareType" />
           <ScalarProperty Name="ShareName" ColumnName="ShareName" />
@@ -604,8 +604,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyTradingCategories">
-      <EntityTypeMapping TypeName="CentralDBModel.CompanyTradingCategory">
-        <MappingFragment StoreEntitySet="CompanyTradingCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.CompanyTradingCategory)">
+        <MappingFragment StoreEntitySet="CompanyTradingCategories">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
           <ScalarProperty Name="TradingCategoryID" ColumnName="TradingCategoryID" />
@@ -615,7 +615,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ContactUs">
-      <EntityTypeMapping TypeName="CentralDBModel.ContactU">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.ContactU)">
         <MappingFragment StoreEntitySet="ContactUs">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
@@ -650,7 +650,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EmailDeliverySettings">
-      <EntityTypeMapping TypeName="CentralDBModel.EmailDeliverySetting">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EmailDeliverySetting)">
         <MappingFragment StoreEntitySet="EmailDeliverySettings">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
@@ -677,8 +677,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EmailHistories">
-      <EntityTypeMapping TypeName="CentralDBModel.EmailHistory">
-        <MappingFragment StoreEntitySet="EmailHistory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EmailHistory)">
+        <MappingFragment StoreEntitySet="EmailHistories">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="EmailTo" ColumnName="EmailTo" />
           <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
@@ -691,8 +691,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EmailTemplates">
-      <EntityTypeMapping TypeName="CentralDBModel.EmailTemplate">
-        <MappingFragment StoreEntitySet="EmailTemplate">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EmailTemplate)">
+        <MappingFragment StoreEntitySet="EmailTemplates">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
           <ScalarProperty Name="Name_jp" ColumnName="Name_jp" />
@@ -723,8 +723,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Employees">
-      <EntityTypeMapping TypeName="CentralDBModel.Employee">
-        <MappingFragment StoreEntitySet="Employee">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Employee)">
+        <MappingFragment StoreEntitySet="Employees">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
           <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
@@ -802,8 +802,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ErrorLogs">
-      <EntityTypeMapping TypeName="CentralDBModel.ErrorLog">
-        <MappingFragment StoreEntitySet="ErrorLog">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.ErrorLog)">
+        <MappingFragment StoreEntitySet="ErrorLogs">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="Component" ColumnName="Component" />
@@ -813,8 +813,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ErrorReportWebs">
-      <EntityTypeMapping TypeName="CentralDBModel.ErrorReportWeb">
-        <MappingFragment StoreEntitySet="ErrorReportWeb">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.ErrorReportWeb)">
+        <MappingFragment StoreEntitySet="ErrorReportWebs">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
           <ScalarProperty Name="Email" ColumnName="Email" />
@@ -830,8 +830,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Estimations">
-      <EntityTypeMapping TypeName="CentralDBModel.Estimation">
-        <MappingFragment StoreEntitySet="Estimation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Estimation)">
+        <MappingFragment StoreEntitySet="Estimations">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
           <ScalarProperty Name="EstimationNo" ColumnName="EstimationNo" />
@@ -1012,7 +1012,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationActions">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationAction">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationAction)">
         <MappingFragment StoreEntitySet="EstimationActions">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="EstimationID" ColumnName="EstimationID" />
@@ -1030,8 +1030,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationActionTypes">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationActionType">
-        <MappingFragment StoreEntitySet="EstimationActionType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationActionType)">
+        <MappingFragment StoreEntitySet="EstimationActionTypes">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Type" ColumnName="Type" />
           <ScalarProperty Name="ActionText" ColumnName="ActionText" />
@@ -1039,8 +1039,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationApprovals">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationApproval">
-        <MappingFragment StoreEntitySet="EstimationApproval">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationApproval)">
+        <MappingFragment StoreEntitySet="EstimationApprovals">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
           <ScalarProperty Name="ApproverID" ColumnName="ApproverID" />
@@ -1054,8 +1054,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationCompetencies">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationCompetency">
-        <MappingFragment StoreEntitySet="EstimationCompetency">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationCompetency)">
+        <MappingFragment StoreEntitySet="EstimationCompetencies">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="EstimationID" ColumnName="EstimationID" />
           <ScalarProperty Name="CompetencyType" ColumnName="CompetencyType" />
@@ -1064,8 +1064,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationDeliveryFileTypes">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationDeliveryFileType">
-        <MappingFragment StoreEntitySet="EstimationDeliveryFileType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationDeliveryFileType)">
+        <MappingFragment StoreEntitySet="EstimationDeliveryFileTypes">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="EstimationID" ColumnName="EstimationID" />
           <ScalarProperty Name="FileType" ColumnName="FileType" />
@@ -1075,7 +1075,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationDetails">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationDetail">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationDetail)">
         <MappingFragment StoreEntitySet="EstimationDetails">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="EstimationID" ColumnName="EstimationID" />
@@ -1143,7 +1143,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationFiles">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationFile">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationFile)">
         <MappingFragment StoreEntitySet="EstimationFiles">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="EstimateID" ColumnName="EstimateID" />
@@ -1156,8 +1156,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationNarrationExpenses">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationNarrationExpense">
-        <MappingFragment StoreEntitySet="EstimationNarrationExpense">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationNarrationExpense)">
+        <MappingFragment StoreEntitySet="EstimationNarrationExpenses">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="TransportationUnitprice" ColumnName="TransportationUnitprice" />
           <ScalarProperty Name="TransportationNumberOfPersons" ColumnName="TransportationNumberOfPersons" />
@@ -1187,8 +1187,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationProjects">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationProject">
-        <MappingFragment StoreEntitySet="EstimationProject">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationProject)">
+        <MappingFragment StoreEntitySet="EstimationProjects">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
           <ScalarProperty Name="ProjectNo" ColumnName="ProjectNo" />
@@ -1213,8 +1213,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationRequestHistories">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationRequestHistory">
-        <MappingFragment StoreEntitySet="EstimationRequestHistory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationRequestHistory)">
+        <MappingFragment StoreEntitySet="EstimationRequestHistories">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="EstimationID" ColumnName="EstimationID" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
@@ -1224,8 +1224,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationUserAccesses">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationUserAccess">
-        <MappingFragment StoreEntitySet="EstimationUserAccess">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationUserAccess)">
+        <MappingFragment StoreEntitySet="EstimationUserAccesses">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="EstimationTypeID" ColumnName="EstimationTypeID" />
@@ -1237,8 +1237,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EstimationWorkContents">
-      <EntityTypeMapping TypeName="CentralDBModel.EstimationWorkContent">
-        <MappingFragment StoreEntitySet="EstimationWorkContent">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.EstimationWorkContent)">
+        <MappingFragment StoreEntitySet="EstimationWorkContents">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="EstimationID" ColumnName="EstimationID" />
           <ScalarProperty Name="WorkContent" ColumnName="WorkContent" />
@@ -1247,8 +1247,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="HiworkLanguagePrices">
-      <EntityTypeMapping TypeName="CentralDBModel.HiworkLanguagePrice">
-        <MappingFragment StoreEntitySet="HiworkLanguagePrice">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.HiworkLanguagePrice)">
+        <MappingFragment StoreEntitySet="HiworkLanguagePrices">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="SourceLanguageID" ColumnName="SourceLanguageID" />
           <ScalarProperty Name="TargetLanguageID" ColumnName="TargetLanguageID" />
@@ -1265,7 +1265,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Address">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Address">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Address)">
         <MappingFragment StoreEntitySet="Master_Address">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CountryID" ColumnName="CountryID" />
@@ -1285,7 +1285,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_AgentBusiness">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_AgentBusiness">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_AgentBusiness)">
         <MappingFragment StoreEntitySet="Master_AgentBusiness">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1305,7 +1305,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_AgentCharacterstics">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_AgentCharacterstics">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_AgentCharacterstics)">
         <MappingFragment StoreEntitySet="Master_AgentCharacterstics">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1325,7 +1325,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_AgentFreeDesignation">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_AgentFreeDesignation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_AgentFreeDesignation)">
         <MappingFragment StoreEntitySet="Master_AgentFreeDesignation">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1345,7 +1345,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Bank">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Bank">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Bank)">
         <MappingFragment StoreEntitySet="Master_Bank">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CountryID" ColumnName="CountryID" />
@@ -1367,7 +1367,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_BankAccount">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_BankAccount">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_BankAccount)">
         <MappingFragment StoreEntitySet="Master_BankAccount">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="BankID" ColumnName="BankID" />
@@ -1390,7 +1390,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_BankAccountType">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_BankAccountType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_BankAccountType)">
         <MappingFragment StoreEntitySet="Master_BankAccountType">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -1409,7 +1409,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_BankBranch">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_BankBranch">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_BankBranch)">
         <MappingFragment StoreEntitySet="Master_BankBranch">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="BankID" ColumnName="BankID" />
@@ -1437,7 +1437,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_BranchOffice">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_BranchOffice">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_BranchOffice)">
         <MappingFragment StoreEntitySet="Master_BranchOffice">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CountryID" ColumnName="CountryID" />
@@ -1458,7 +1458,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_CompanyBusinessService">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_CompanyBusinessService">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_CompanyBusinessService)">
         <MappingFragment StoreEntitySet="Master_CompanyBusinessService">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1478,7 +1478,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_CompanyBusinessSpeciality">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_CompanyBusinessSpeciality">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_CompanyBusinessSpeciality)">
         <MappingFragment StoreEntitySet="Master_CompanyBusinessSpeciality">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1498,7 +1498,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_CompanyIndustryClassification">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_CompanyIndustryClassification">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_CompanyIndustryClassification)">
         <MappingFragment StoreEntitySet="Master_CompanyIndustryClassification">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1520,7 +1520,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_CompanyIndustryClassificationItem">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_CompanyIndustryClassificationItem">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_CompanyIndustryClassificationItem)">
         <MappingFragment StoreEntitySet="Master_CompanyIndustryClassificationItem">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="IndustryClassificationID" ColumnName="IndustryClassificationID" />
@@ -1547,7 +1547,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_CompanyTradingCategory">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_CompanyTradingCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_CompanyTradingCategory)">
         <MappingFragment StoreEntitySet="Master_CompanyTradingCategory">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1568,7 +1568,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_CompanyTradingCategoryItem">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_CompanyTradingCategoryItem">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_CompanyTradingCategoryItem)">
         <MappingFragment StoreEntitySet="Master_CompanyTradingCategoryItem">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="TradingCategoryID" ColumnName="TradingCategoryID" />
@@ -1595,7 +1595,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_CompanyTradingDivision">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_CompanyTradingDivision">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_CompanyTradingDivision)">
         <MappingFragment StoreEntitySet="Master_CompanyTradingDivision">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1615,7 +1615,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Country">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Country">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Country)">
         <MappingFragment StoreEntitySet="Master_Country">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1638,7 +1638,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Culture">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Culture">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Culture)">
         <MappingFragment StoreEntitySet="Master_Culture">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CountryID" ColumnName="CountryID" />
@@ -1656,7 +1656,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Currency">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Currency">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Currency)">
         <MappingFragment StoreEntitySet="Master_Currency">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1678,7 +1678,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_CurrencyRate">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_CurrencyRate">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_CurrencyRate)">
         <MappingFragment StoreEntitySet="Master_CurrencyRate">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
@@ -1695,7 +1695,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_DeliveryMethod">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_DeliveryMethod">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_DeliveryMethod)">
         <MappingFragment StoreEntitySet="Master_DeliveryMethod">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -1715,7 +1715,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Department">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Department">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Department)">
         <MappingFragment StoreEntitySet="Master_Department">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CountryID" ColumnName="CountryID" />
@@ -1743,7 +1743,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Designation">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Designation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Designation)">
         <MappingFragment StoreEntitySet="Master_Designation">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CountryID" ColumnName="CountryID" />
@@ -1768,7 +1768,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Division">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Division">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Division)">
         <MappingFragment StoreEntitySet="Master_Division">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CountryID" ColumnName="CountryID" />
@@ -1790,7 +1790,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_EmailCategorySettings">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_EmailCategorySettings">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_EmailCategorySettings)">
         <MappingFragment StoreEntitySet="Master_EmailCategorySettings">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -1805,7 +1805,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_EmailGroupSettings">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_EmailGroupSettings">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_EmailGroupSettings)">
         <MappingFragment StoreEntitySet="Master_EmailGroupSettings">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -1820,7 +1820,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_EstimationRoutes">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_EstimationRoutes">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_EstimationRoutes)">
         <MappingFragment StoreEntitySet="Master_EstimationRoutes">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1840,7 +1840,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_EstimationServiceType">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_EstimationServiceType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_EstimationServiceType)">
         <MappingFragment StoreEntitySet="Master_EstimationServiceType">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1862,7 +1862,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_EstimationSpecializedField">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_EstimationSpecializedField">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_EstimationSpecializedField)">
         <MappingFragment StoreEntitySet="Master_EstimationSpecializedField">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1882,7 +1882,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_EstimationStatus">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_EstimationStatus">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_EstimationStatus)">
         <MappingFragment StoreEntitySet="Master_EstimationStatus">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -1897,7 +1897,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_EstimationSubSpecializedField">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_EstimationSubSpecializedField">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_EstimationSubSpecializedField)">
         <MappingFragment StoreEntitySet="Master_EstimationSubSpecializedField">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="SpecializedField" ColumnName="SpecializedField" />
@@ -1918,7 +1918,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_EstimationType">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_EstimationType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_EstimationType)">
         <MappingFragment StoreEntitySet="Master_EstimationType">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1939,7 +1939,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Language">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Language">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Language)">
         <MappingFragment StoreEntitySet="Master_Language">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1959,7 +1959,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Market">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Market">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Market)">
         <MappingFragment StoreEntitySet="Master_Market">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -1979,7 +1979,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_PartnerServiceType">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_PartnerServiceType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_PartnerServiceType)">
         <MappingFragment StoreEntitySet="Master_PartnerServiceType">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -1998,7 +1998,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_PaymentType">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_PaymentType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_PaymentType)">
         <MappingFragment StoreEntitySet="Master_PaymentType">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="IsActive" ColumnName="IsActive" />
@@ -2018,7 +2018,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Penalty">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Penalty">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Penalty)">
         <MappingFragment StoreEntitySet="Master_Penalty">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CategoryNo" ColumnName="CategoryNo" />
@@ -2051,7 +2051,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffBusinessCategory">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffBusinessCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffBusinessCategory)">
         <MappingFragment StoreEntitySet="Master_StaffBusinessCategory">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2071,7 +2071,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffBusinessCategoryDetails">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffBusinessCategoryDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffBusinessCategoryDetails)">
         <MappingFragment StoreEntitySet="Master_StaffBusinessCategoryDetails">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="BusinessCategoryID" ColumnName="BusinessCategoryID" />
@@ -2092,7 +2092,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffCategory">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffCategory)">
         <MappingFragment StoreEntitySet="Master_StaffCategory">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2118,7 +2118,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffCurrentState">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffCurrentState">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffCurrentState)">
         <MappingFragment StoreEntitySet="Master_StaffCurrentState">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2144,7 +2144,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffDevelopmentSkill">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffDevelopmentSkill">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffDevelopmentSkill)">
         <MappingFragment StoreEntitySet="Master_StaffDevelopmentSkill">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2170,7 +2170,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffDevelopmentSkillItem">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffDevelopmentSkillItem">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffDevelopmentSkillItem)">
         <MappingFragment StoreEntitySet="Master_StaffDevelopmentSkillItem">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="DevelopmentSkillID" ColumnName="DevelopmentSkillID" />
@@ -2197,7 +2197,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffEducationalDegree">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffEducationalDegree">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffEducationalDegree)">
         <MappingFragment StoreEntitySet="Master_StaffEducationalDegree">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2223,7 +2223,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffEmploymentType">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffEmploymentType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffEmploymentType)">
         <MappingFragment StoreEntitySet="Master_StaffEmploymentType">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2249,7 +2249,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffInterpretationFields">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffInterpretationFields">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffInterpretationFields)">
         <MappingFragment StoreEntitySet="Master_StaffInterpretationFields">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2275,7 +2275,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffJobCategory">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffJobCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffJobCategory)">
         <MappingFragment StoreEntitySet="Master_StaffJobCategory">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2295,7 +2295,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffJobCategoryDetails">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffJobCategoryDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffJobCategoryDetails)">
         <MappingFragment StoreEntitySet="Master_StaffJobCategoryDetails">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="JobCategoryID" ColumnName="JobCategoryID" />
@@ -2316,7 +2316,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffKnowledgeField">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffKnowledgeField">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffKnowledgeField)">
         <MappingFragment StoreEntitySet="Master_StaffKnowledgeField">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2342,7 +2342,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffKnowledgeFieldItem">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffKnowledgeFieldItem">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffKnowledgeFieldItem)">
         <MappingFragment StoreEntitySet="Master_StaffKnowledgeFieldItem">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="KnowledgeFieldID" ColumnName="KnowledgeFieldID" />
@@ -2369,7 +2369,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffLanguageQualifications">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffLanguageQualifications">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffLanguageQualifications)">
         <MappingFragment StoreEntitySet="Master_StaffLanguageQualifications">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2394,7 +2394,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffMajorSubject">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffMajorSubject">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffMajorSubject)">
         <MappingFragment StoreEntitySet="Master_StaffMajorSubject">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -2414,7 +2414,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffMajorSubjectDetails">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffMajorSubjectDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffMajorSubjectDetails)">
         <MappingFragment StoreEntitySet="Master_StaffMajorSubjectDetails">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffMajorSubjectID" ColumnName="StaffMajorSubjectID" />
@@ -2441,7 +2441,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffMedicalField">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffMedicalField">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffMedicalField)">
         <MappingFragment StoreEntitySet="Master_StaffMedicalField">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2468,7 +2468,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffNarrationType">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffNarrationType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffNarrationType)">
         <MappingFragment StoreEntitySet="Master_StaffNarrationType">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -2489,7 +2489,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffPatentField">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffPatentField">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffPatentField)">
         <MappingFragment StoreEntitySet="Master_StaffPatentField">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2516,7 +2516,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffProfession">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffProfession">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffProfession)">
         <MappingFragment StoreEntitySet="Master_StaffProfession">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2542,7 +2542,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffResearchField">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffResearchField">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffResearchField)">
         <MappingFragment StoreEntitySet="Master_StaffResearchField">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2569,7 +2569,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffSoftwareSkill">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffSoftwareSkill">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffSoftwareSkill)">
         <MappingFragment StoreEntitySet="Master_StaffSoftwareSkill">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2594,7 +2594,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffSpecialField">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffSpecialField">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffSpecialField)">
         <MappingFragment StoreEntitySet="Master_StaffSpecialField">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2621,7 +2621,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffTechnicalSkillCategory">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffTechnicalSkillCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffTechnicalSkillCategory)">
         <MappingFragment StoreEntitySet="Master_StaffTechnicalSkillCategory">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -2643,7 +2643,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffTechnicalSkillItems">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffTechnicalSkillItems">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffTechnicalSkillItems)">
         <MappingFragment StoreEntitySet="Master_StaffTechnicalSkillItems">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="TechnicalSkillCategoryID" ColumnName="TechnicalSkillCategoryID" />
@@ -2670,7 +2670,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffTranslationFields">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffTranslationFields">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffTranslationFields)">
         <MappingFragment StoreEntitySet="Master_StaffTranslationFields">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2696,7 +2696,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffType">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffType)">
         <MappingFragment StoreEntitySet="Master_StaffType">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2722,7 +2722,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_StaffVisaType">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_StaffVisaType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_StaffVisaType)">
         <MappingFragment StoreEntitySet="Master_StaffVisaType">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2748,7 +2748,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Team">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Team">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Team)">
         <MappingFragment StoreEntitySet="Master_Team">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CountryID" ColumnName="CountryID" />
@@ -2778,7 +2778,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_TeamToMarket">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_TeamToMarket">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_TeamToMarket)">
         <MappingFragment StoreEntitySet="Master_TeamToMarket">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="TeamID" ColumnName="TeamID" />
@@ -2789,7 +2789,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_Unit">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_Unit">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_Unit)">
         <MappingFragment StoreEntitySet="Master_Unit">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
@@ -2810,7 +2810,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_UnitPriceSetting">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_UnitPriceSetting">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_UnitPriceSetting)">
         <MappingFragment StoreEntitySet="Master_UnitPriceSetting">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="UnitID" ColumnName="UnitID" />
@@ -2831,7 +2831,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_WebOrderStatus">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_WebOrderStatus">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_WebOrderStatus)">
         <MappingFragment StoreEntitySet="Master_WebOrderStatus">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2851,7 +2851,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master_WorkingStatus">
-      <EntityTypeMapping TypeName="CentralDBModel.Master_WorkingStatus">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Master_WorkingStatus)">
         <MappingFragment StoreEntitySet="Master_WorkingStatus">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
@@ -2871,8 +2871,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Menus">
-      <EntityTypeMapping TypeName="CentralDBModel.Menu">
-        <MappingFragment StoreEntitySet="Menu">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Menu)">
+        <MappingFragment StoreEntitySet="Menus">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
           <ScalarProperty Name="Name_jp" ColumnName="Name_jp" />
@@ -2900,8 +2900,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Messages">
-      <EntityTypeMapping TypeName="CentralDBModel.Message">
-        <MappingFragment StoreEntitySet="Message">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Message)">
+        <MappingFragment StoreEntitySet="Messages">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="SenderID" ColumnName="SenderID" />
           <ScalarProperty Name="SenderName" ColumnName="SenderName" />
@@ -2925,8 +2925,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Modules">
-      <EntityTypeMapping TypeName="CentralDBModel.Module">
-        <MappingFragment StoreEntitySet="Module">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Module)">
+        <MappingFragment StoreEntitySet="Modules">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
           <ScalarProperty Name="Name_jp" ColumnName="Name_jp" />
@@ -2951,8 +2951,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Notices">
-      <EntityTypeMapping TypeName="CentralDBModel.Notice">
-        <MappingFragment StoreEntitySet="Notice">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Notice)">
+        <MappingFragment StoreEntitySet="Notices">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="NoticeNo" ColumnName="NoticeNo" />
           <ScalarProperty Name="RegisteredDate" ColumnName="RegisteredDate" />
@@ -2983,8 +2983,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Orders">
-      <EntityTypeMapping TypeName="CentralDBModel.Order">
-        <MappingFragment StoreEntitySet="Order">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Order)">
+        <MappingFragment StoreEntitySet="Orders">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
           <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
@@ -3102,7 +3102,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Order_DeliveryDocuments">
-      <EntityTypeMapping TypeName="CentralDBModel.Order_DeliveryDocuments">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Order_DeliveryDocuments)">
         <MappingFragment StoreEntitySet="Order_DeliveryDocuments">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
@@ -3114,7 +3114,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Order_StaffAllowance">
-      <EntityTypeMapping TypeName="CentralDBModel.Order_StaffAllowance">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Order_StaffAllowance)">
         <MappingFragment StoreEntitySet="Order_StaffAllowance">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="EstimationID" ColumnName="EstimationID" />
@@ -3130,7 +3130,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Order_Web">
-      <EntityTypeMapping TypeName="CentralDBModel.Order_Web">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Order_Web)">
         <MappingFragment StoreEntitySet="Order_Web">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
@@ -3178,7 +3178,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Order_WebDocuments">
-      <EntityTypeMapping TypeName="CentralDBModel.Order_WebDocuments">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Order_WebDocuments)">
         <MappingFragment StoreEntitySet="Order_WebDocuments">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
@@ -3193,7 +3193,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OrderAppointedToStaff_Web">
-      <EntityTypeMapping TypeName="CentralDBModel.OrderAppointedToStaff_Web">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.OrderAppointedToStaff_Web)">
         <MappingFragment StoreEntitySet="OrderAppointedToStaff_Web">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="TranslatorID" ColumnName="TranslatorID" />
@@ -3204,7 +3204,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OrderDetails">
-      <EntityTypeMapping TypeName="CentralDBModel.OrderDetail">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.OrderDetail)">
         <MappingFragment StoreEntitySet="OrderDetails">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
@@ -3233,8 +3233,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OrderEvaluationByCustomers">
-      <EntityTypeMapping TypeName="CentralDBModel.OrderEvaluationByCustomer">
-        <MappingFragment StoreEntitySet="OrderEvaluationByCustomer">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.OrderEvaluationByCustomer)">
+        <MappingFragment StoreEntitySet="OrderEvaluationByCustomers">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="TranslatorID" ColumnName="TranslatorID" />
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
@@ -3251,7 +3251,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OrderRequestedToStaff_Web">
-      <EntityTypeMapping TypeName="CentralDBModel.OrderRequestedToStaff_Web">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.OrderRequestedToStaff_Web)">
         <MappingFragment StoreEntitySet="OrderRequestedToStaff_Web">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="TranslatorID" ColumnName="TranslatorID" />
@@ -3262,7 +3262,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ProfitShareSettings">
-      <EntityTypeMapping TypeName="CentralDBModel.ProfitShareSetting">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.ProfitShareSetting)">
         <MappingFragment StoreEntitySet="ProfitShareSettings">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="SCharge" ColumnName="SCharge" />
@@ -3285,8 +3285,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Roles">
-      <EntityTypeMapping TypeName="CentralDBModel.Role">
-        <MappingFragment StoreEntitySet="Role">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Role)">
+        <MappingFragment StoreEntitySet="Roles">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
           <ScalarProperty Name="Name_jp" ColumnName="Name_jp" />
@@ -3311,8 +3311,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="RoleAudits">
-      <EntityTypeMapping TypeName="CentralDBModel.RoleAudit">
-        <MappingFragment StoreEntitySet="RoleAudit">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.RoleAudit)">
+        <MappingFragment StoreEntitySet="RoleAudits">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="RoleId" ColumnName="RoleId" />
           <ScalarProperty Name="ScreenOperationId" ColumnName="ScreenOperationId" />
@@ -3328,8 +3328,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="RoleWiseOperationPermissions">
-      <EntityTypeMapping TypeName="CentralDBModel.RoleWiseOperationPermission">
-        <MappingFragment StoreEntitySet="RoleWiseOperationPermission">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.RoleWiseOperationPermission)">
+        <MappingFragment StoreEntitySet="RoleWiseOperationPermissions">
           <ScalarProperty Name="RoleId" ColumnName="RoleId" />
           <ScalarProperty Name="ScreenOperationId" ColumnName="ScreenOperationId" />
           <ScalarProperty Name="HaveAccess" ColumnName="HaveAccess" />
@@ -3343,8 +3343,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="RoleWiseScreenPermissions">
-      <EntityTypeMapping TypeName="CentralDBModel.RoleWiseScreenPermission">
-        <MappingFragment StoreEntitySet="RoleWiseScreenPermission">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.RoleWiseScreenPermission)">
+        <MappingFragment StoreEntitySet="RoleWiseScreenPermissions">
           <ScalarProperty Name="RoleId" ColumnName="RoleId" />
           <ScalarProperty Name="ScreenId" ColumnName="ScreenId" />
           <ScalarProperty Name="AccessRight" ColumnName="AccessRight" />
@@ -3358,8 +3358,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Screens">
-      <EntityTypeMapping TypeName="CentralDBModel.Screen">
-        <MappingFragment StoreEntitySet="Screen">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Screen)">
+        <MappingFragment StoreEntitySet="Screens">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
           <ScalarProperty Name="Title_en" ColumnName="Title_en" />
@@ -3380,8 +3380,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ScreenOperations">
-      <EntityTypeMapping TypeName="CentralDBModel.ScreenOperation">
-        <MappingFragment StoreEntitySet="ScreenOperation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.ScreenOperation)">
+        <MappingFragment StoreEntitySet="ScreenOperations">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
           <ScalarProperty Name="Name_jp" ColumnName="Name_jp" />
@@ -3406,8 +3406,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staffs">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff">
-        <MappingFragment StoreEntitySet="Staff">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff)">
+        <MappingFragment StoreEntitySet="Staffs">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
           <ScalarProperty Name="StaffEmailID" ColumnName="StaffEmailID" />
@@ -3547,7 +3547,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_BankAccountInfo">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_BankAccountInfo">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_BankAccountInfo)">
         <MappingFragment StoreEntitySet="Staff_BankAccountInfo">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3582,7 +3582,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_CurrentStates">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_CurrentStates">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_CurrentStates)">
         <MappingFragment StoreEntitySet="Staff_CurrentStates">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3592,7 +3592,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_DevelopmentSkill">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_DevelopmentSkill">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_DevelopmentSkill)">
         <MappingFragment StoreEntitySet="Staff_DevelopmentSkill">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3603,7 +3603,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_EditingproInformation">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_EditingproInformation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_EditingproInformation)">
         <MappingFragment StoreEntitySet="Staff_EditingproInformation">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3630,7 +3630,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_EducationalHistory">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_EducationalHistory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_EducationalHistory)">
         <MappingFragment StoreEntitySet="Staff_EducationalHistory">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3659,7 +3659,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_InterpretationSpecialFields">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_InterpretationSpecialFields">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_InterpretationSpecialFields)">
         <MappingFragment StoreEntitySet="Staff_InterpretationSpecialFields">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3669,7 +3669,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_JobCategories">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_JobCategories">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_JobCategories)">
         <MappingFragment StoreEntitySet="Staff_JobCategories">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3679,7 +3679,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_JobHistory">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_JobHistory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_JobHistory)">
         <MappingFragment StoreEntitySet="Staff_JobHistory">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3755,7 +3755,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_KnowledgeFields">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_KnowledgeFields">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_KnowledgeFields)">
         <MappingFragment StoreEntitySet="Staff_KnowledgeFields">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3766,7 +3766,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_ManagementExperience">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_ManagementExperience">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_ManagementExperience)">
         <MappingFragment StoreEntitySet="Staff_ManagementExperience">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3814,7 +3814,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_NarrationInformation">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_NarrationInformation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_NarrationInformation)">
         <MappingFragment StoreEntitySet="Staff_NarrationInformation">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3865,7 +3865,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_NarrationVoiceFiles">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_NarrationVoiceFiles">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_NarrationVoiceFiles)">
         <MappingFragment StoreEntitySet="Staff_NarrationVoiceFiles">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3887,7 +3887,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_ProfessionalSpeciality">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_ProfessionalSpeciality">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_ProfessionalSpeciality)">
         <MappingFragment StoreEntitySet="Staff_ProfessionalSpeciality">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3897,7 +3897,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_ServiceTypes">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_ServiceTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_ServiceTypes)">
         <MappingFragment StoreEntitySet="Staff_ServiceTypes">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3907,7 +3907,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_SkillCertificate">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_SkillCertificate">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_SkillCertificate)">
         <MappingFragment StoreEntitySet="Staff_SkillCertificate">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3980,7 +3980,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_SoftwareSkill">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_SoftwareSkill">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_SoftwareSkill)">
         <MappingFragment StoreEntitySet="Staff_SoftwareSkill">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -3995,7 +3995,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_TechnicalCertificate">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_TechnicalCertificate">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_TechnicalCertificate)">
         <MappingFragment StoreEntitySet="Staff_TechnicalCertificate">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -4016,7 +4016,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_TranslateInterpretExperience">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_TranslateInterpretExperience">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_TranslateInterpretExperience)">
         <MappingFragment StoreEntitySet="Staff_TranslateInterpretExperience">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -4087,7 +4087,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_TranslationSpecialFields">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_TranslationSpecialFields">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_TranslationSpecialFields)">
         <MappingFragment StoreEntitySet="Staff_TranslationSpecialFields">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -4097,7 +4097,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_TransproInformation">
-      <EntityTypeMapping TypeName="CentralDBModel.Staff_TransproInformation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.Staff_TransproInformation)">
         <MappingFragment StoreEntitySet="Staff_TransproInformation">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -4128,18 +4128,18 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="CentralDBModel.sysdiagram">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.sysdiagram)">
         <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
           <ScalarProperty Name="version" ColumnName="version" />
           <ScalarProperty Name="definition" ColumnName="definition" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TranslationCertificateSettings">
-      <EntityTypeMapping TypeName="CentralDBModel.TranslationCertificateSetting">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.TranslationCertificateSetting)">
         <MappingFragment StoreEntitySet="TranslationCertificateSettings">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CertificateType" ColumnName="CertificateType" />
@@ -4148,8 +4148,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TranslationLevels">
-      <EntityTypeMapping TypeName="CentralDBModel.TranslationLevel">
-        <MappingFragment StoreEntitySet="TranslationLevel">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.TranslationLevel)">
+        <MappingFragment StoreEntitySet="TranslationLevels">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
           <ScalarProperty Name="Name_jp" ColumnName="Name_jp" />
@@ -4163,8 +4163,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TranslatorBlackLists">
-      <EntityTypeMapping TypeName="CentralDBModel.TranslatorBlackList">
-        <MappingFragment StoreEntitySet="TranslatorBlackList">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.TranslatorBlackList)">
+        <MappingFragment StoreEntitySet="TranslatorBlackLists">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="ClientID" ColumnName="ClientID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -4172,8 +4172,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TranslatorFavouriteLists">
-      <EntityTypeMapping TypeName="CentralDBModel.TranslatorFavouriteList">
-        <MappingFragment StoreEntitySet="TranslatorFavouriteList">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.TranslatorFavouriteList)">
+        <MappingFragment StoreEntitySet="TranslatorFavouriteLists">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="ClientID" ColumnName="ClientID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -4181,8 +4181,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TransproDeliveryPlanSettings">
-      <EntityTypeMapping TypeName="CentralDBModel.TransproDeliveryPlanSetting">
-        <MappingFragment StoreEntitySet="TransproDeliveryPlanSetting">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.TransproDeliveryPlanSetting)">
+        <MappingFragment StoreEntitySet="TransproDeliveryPlanSettings">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
           <ScalarProperty Name="Name_jp" ColumnName="Name_jp" />
@@ -4201,8 +4201,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TransproLanguagePriceCategories">
-      <EntityTypeMapping TypeName="CentralDBModel.TransproLanguagePriceCategory">
-        <MappingFragment StoreEntitySet="TransproLanguagePriceCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.TransproLanguagePriceCategory)">
+        <MappingFragment StoreEntitySet="TransproLanguagePriceCategories">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="SourceLanguageID" ColumnName="SourceLanguageID" />
           <ScalarProperty Name="TargetLanguageID" ColumnName="TargetLanguageID" />
@@ -4225,8 +4225,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="UserInformations">
-      <EntityTypeMapping TypeName="CentralDBModel.UserInformation">
-        <MappingFragment StoreEntitySet="UserInformation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.UserInformation)">
+        <MappingFragment StoreEntitySet="UserInformations">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
           <ScalarProperty Name="LastName" ColumnName="LastName" />
@@ -4257,8 +4257,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="UserInRoles">
-      <EntityTypeMapping TypeName="CentralDBModel.UserInRole">
-        <MappingFragment StoreEntitySet="UserInRole">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.UserInRole)">
+        <MappingFragment StoreEntitySet="UserInRoles">
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="RoleId" ColumnName="RoleId" />
           <ScalarProperty Name="IsActive" ColumnName="IsActive" />
@@ -4271,8 +4271,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="UserTypes">
-      <EntityTypeMapping TypeName="CentralDBModel.UserType">
-        <MappingFragment StoreEntitySet="UserType">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.UserType)">
+        <MappingFragment StoreEntitySet="UserTypes">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name_en" ColumnName="Name_en" />
           <ScalarProperty Name="Name_jp" ColumnName="Name_jp" />
@@ -4296,8 +4296,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="IdentityInformations">
-      <EntityTypeMapping TypeName="CentralDBModel.IdentityInformation">
-        <MappingFragment StoreEntitySet="IdentityInformation">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.IdentityInformation)">
+        <MappingFragment StoreEntitySet="IdentityInformations">
           <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
           <ScalarProperty Name="ApplicationIdLength" ColumnName="ApplicationIdLength" />
           <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
@@ -4320,8 +4320,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PayPalTransactions">
-      <EntityTypeMapping TypeName="CentralDBModel.PayPalTransaction">
-        <MappingFragment StoreEntitySet="PayPalTransaction">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.PayPalTransaction)">
+        <MappingFragment StoreEntitySet="PayPalTransactions">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Guid" ColumnName="Guid" />
           <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
@@ -4331,38 +4331,62 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TransproLanguagePriceDetails">
-      <EntityTypeMapping TypeName="CentralDBModel.TransproLanguagePriceDetail">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.TransproLanguagePriceDetail)">
         <MappingFragment StoreEntitySet="TransproLanguagePriceDetails">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="PriceCategoryID" ColumnName="PriceCategoryID" />
           <ScalarProperty Name="DeliveryPlanID" ColumnName="DeliveryPlanID" />
+          <ScalarProperty Name="IsDefaultForView" ColumnName="IsDefaultForView" />
           <ScalarProperty Name="LightPrice" ColumnName="LightPrice" />
           <ScalarProperty Name="BusinessPrice" ColumnName="BusinessPrice" />
           <ScalarProperty Name="ExpertPrice" ColumnName="ExpertPrice" />
-          <ScalarProperty Name="IsDefaultForView" ColumnName="IsDefaultForView" />
           <ScalarProperty Name="SortBy" ColumnName="SortBy" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="RoleManagements">
-      <EntityTypeMapping TypeName="CentralDBModel.RoleManagement">
-        <MappingFragment StoreEntitySet="RoleManagement">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.RoleManagement)">
+        <MappingFragment StoreEntitySet="RoleManagements">
           <ScalarProperty Name="UserId" ColumnName="UserId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="staff_tbd">
-      <EntityTypeMapping TypeName="CentralDBModel.staff_tbd">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.staff_tbd)">
         <MappingFragment StoreEntitySet="staff_tbd">
           <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
           <ScalarProperty Name="StaffEmailID" ColumnName="StaffEmailID" />
           <ScalarProperty Name="NickName_en" ColumnName="NickName_en" />
+          <ScalarProperty Name="FirstName_en" ColumnName="FirstName_en" />
+          <ScalarProperty Name="LastName_en" ColumnName="LastName_en" />
+          <ScalarProperty Name="ForiegnLanguage1ID" ColumnName="ForiegnLanguage1ID" />
+          <ScalarProperty Name="Expr39" ColumnName="Expr39" />
+          <ScalarProperty Name="Expr40" ColumnName="Expr40" />
+          <ScalarProperty Name="Expr46" ColumnName="Expr46" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
+          <ScalarProperty Name="Expr8" ColumnName="Expr8" />
+          <ScalarProperty Name="Expr9" ColumnName="Expr9" />
+          <ScalarProperty Name="Expr10" ColumnName="Expr10" />
+          <ScalarProperty Name="Expr16" ColumnName="Expr16" />
+          <ScalarProperty Name="Expr17" ColumnName="Expr17" />
+          <ScalarProperty Name="Expr18" ColumnName="Expr18" />
+          <ScalarProperty Name="Expr24" ColumnName="Expr24" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="CountryOfCitizenship" ColumnName="CountryOfCitizenship" />
+          <ScalarProperty Name="Expr26" ColumnName="Expr26" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name_en" ColumnName="Name_en" />
+          <ScalarProperty Name="Expr34" ColumnName="Expr34" />
+          <ScalarProperty Name="VisaTypeID" ColumnName="VisaTypeID" />
+          <ScalarProperty Name="Expr35" ColumnName="Expr35" />
+          <ScalarProperty Name="Expr50" ColumnName="Expr50" />
           <ScalarProperty Name="NickName_jp" ColumnName="NickName_jp" />
           <ScalarProperty Name="NickName_kr" ColumnName="NickName_kr" />
           <ScalarProperty Name="NickName_cn" ColumnName="NickName_cn" />
           <ScalarProperty Name="NickName_fr" ColumnName="NickName_fr" />
           <ScalarProperty Name="NickName_tl" ColumnName="NickName_tl" />
-          <ScalarProperty Name="FirstName_en" ColumnName="FirstName_en" />
           <ScalarProperty Name="FirstName_jp" ColumnName="FirstName_jp" />
           <ScalarProperty Name="FirstName_kr" ColumnName="FirstName_kr" />
           <ScalarProperty Name="FirstName_cn" ColumnName="FirstName_cn" />
@@ -4374,7 +4398,6 @@
           <ScalarProperty Name="MiddleName_cn" ColumnName="MiddleName_cn" />
           <ScalarProperty Name="MiddleName_fr" ColumnName="MiddleName_fr" />
           <ScalarProperty Name="MiddleName_tl" ColumnName="MiddleName_tl" />
-          <ScalarProperty Name="LastName_en" ColumnName="LastName_en" />
           <ScalarProperty Name="LastName_jp" ColumnName="LastName_jp" />
           <ScalarProperty Name="LastName_kr" ColumnName="LastName_kr" />
           <ScalarProperty Name="LastName_cn" ColumnName="LastName_cn" />
@@ -4383,51 +4406,34 @@
           <ScalarProperty Name="TelephoneNo" ColumnName="TelephoneNo" />
           <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
           <ScalarProperty Name="Fax" ColumnName="Fax" />
-          <ScalarProperty Name="ForiegnLanguage1ID" ColumnName="ForiegnLanguage1ID" />
-          <ScalarProperty Name="Expr39" ColumnName="Expr39" />
-          <ScalarProperty Name="Expr40" ColumnName="Expr40" />
           <ScalarProperty Name="Expr41" ColumnName="Expr41" />
           <ScalarProperty Name="Expr42" ColumnName="Expr42" />
           <ScalarProperty Name="Expr43" ColumnName="Expr43" />
           <ScalarProperty Name="Expr44" ColumnName="Expr44" />
           <ScalarProperty Name="Expr45" ColumnName="Expr45" />
-          <ScalarProperty Name="Expr46" ColumnName="Expr46" />
           <ScalarProperty Name="ForeignLang1Level" ColumnName="ForeignLang1Level" />
           <ScalarProperty Name="ForiegnLanguage2ID" ColumnName="ForiegnLanguage2ID" />
-          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
-          <ScalarProperty Name="Expr2" ColumnName="Expr2" />
           <ScalarProperty Name="Expr3" ColumnName="Expr3" />
           <ScalarProperty Name="Expr4" ColumnName="Expr4" />
           <ScalarProperty Name="Expr5" ColumnName="Expr5" />
           <ScalarProperty Name="Expr6" ColumnName="Expr6" />
           <ScalarProperty Name="Expr7" ColumnName="Expr7" />
-          <ScalarProperty Name="Expr8" ColumnName="Expr8" />
           <ScalarProperty Name="ForeignLang2Level" ColumnName="ForeignLang2Level" />
           <ScalarProperty Name="ForiegnLanguage3ID" ColumnName="ForiegnLanguage3ID" />
-          <ScalarProperty Name="Expr9" ColumnName="Expr9" />
-          <ScalarProperty Name="Expr10" ColumnName="Expr10" />
           <ScalarProperty Name="Expr11" ColumnName="Expr11" />
           <ScalarProperty Name="Expr12" ColumnName="Expr12" />
           <ScalarProperty Name="Expr13" ColumnName="Expr13" />
           <ScalarProperty Name="Expr14" ColumnName="Expr14" />
           <ScalarProperty Name="Expr15" ColumnName="Expr15" />
-          <ScalarProperty Name="Expr16" ColumnName="Expr16" />
           <ScalarProperty Name="ForeignLang3Level" ColumnName="ForeignLang3Level" />
           <ScalarProperty Name="ForiegnLanguage4ID" ColumnName="ForiegnLanguage4ID" />
-          <ScalarProperty Name="Expr17" ColumnName="Expr17" />
-          <ScalarProperty Name="Expr18" ColumnName="Expr18" />
           <ScalarProperty Name="Expr19" ColumnName="Expr19" />
           <ScalarProperty Name="Expr20" ColumnName="Expr20" />
           <ScalarProperty Name="Expr21" ColumnName="Expr21" />
           <ScalarProperty Name="Expr22" ColumnName="Expr22" />
           <ScalarProperty Name="Expr23" ColumnName="Expr23" />
-          <ScalarProperty Name="Expr24" ColumnName="Expr24" />
           <ScalarProperty Name="ForeignLang4Level" ColumnName="ForeignLang4Level" />
-          <ScalarProperty Name="Sex" ColumnName="Sex" />
-          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
-          <ScalarProperty Name="CountryOfCitizenship" ColumnName="CountryOfCitizenship" />
           <ScalarProperty Name="Expr25" ColumnName="Expr25" />
-          <ScalarProperty Name="Expr26" ColumnName="Expr26" />
           <ScalarProperty Name="Expr27" ColumnName="Expr27" />
           <ScalarProperty Name="Expr28" ColumnName="Expr28" />
           <ScalarProperty Name="Expr29" ColumnName="Expr29" />
@@ -4435,10 +4441,8 @@
           <ScalarProperty Name="Expr31" ColumnName="Expr31" />
           <ScalarProperty Name="IsTrading" ColumnName="IsTrading" />
           <ScalarProperty Name="SortBy" ColumnName="SortBy" />
-          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
           <ScalarProperty Name="LivingCountryID" ColumnName="LivingCountryID" />
           <ScalarProperty Name="Code" ColumnName="Code" />
-          <ScalarProperty Name="Name_en" ColumnName="Name_en" />
           <ScalarProperty Name="Name_jp" ColumnName="Name_jp" />
           <ScalarProperty Name="Name_kr" ColumnName="Name_kr" />
           <ScalarProperty Name="Name_cn" ColumnName="Name_cn" />
@@ -4446,9 +4450,6 @@
           <ScalarProperty Name="Name_tl" ColumnName="Name_tl" />
           <ScalarProperty Name="Expr32" ColumnName="Expr32" />
           <ScalarProperty Name="Expr33" ColumnName="Expr33" />
-          <ScalarProperty Name="Expr34" ColumnName="Expr34" />
-          <ScalarProperty Name="VisaTypeID" ColumnName="VisaTypeID" />
-          <ScalarProperty Name="Expr35" ColumnName="Expr35" />
           <ScalarProperty Name="Expr36" ColumnName="Expr36" />
           <ScalarProperty Name="Expr37" ColumnName="Expr37" />
           <ScalarProperty Name="Expr38" ColumnName="Expr38" />
@@ -4461,17 +4462,23 @@
           <ScalarProperty Name="Description_fr" ColumnName="Description_fr" />
           <ScalarProperty Name="Description_tl" ColumnName="Description_tl" />
           <ScalarProperty Name="Expr49" ColumnName="Expr49" />
-          <ScalarProperty Name="Expr50" ColumnName="Expr50" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="VW_GetAdvancedSearch">
-      <EntityTypeMapping TypeName="CentralDBModel.VW_GetAdvancedSearch">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.VW_GetAdvancedSearch)">
         <MappingFragment StoreEntitySet="VW_GetAdvancedSearch">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
-          <ScalarProperty Name="MyIdentityNo" ColumnName="MyIdentityNo" />
           <ScalarProperty Name="StaffEmailID" ColumnName="StaffEmailID" />
+          <ScalarProperty Name="AchievementSearch" ColumnName="AchievementSearch" />
+          <ScalarProperty Name="SNSAccount" ColumnName="SNSAccount" />
+          <ScalarProperty Name="DtpExpCount" ColumnName="DtpExpCount" />
+          <ScalarProperty Name="TRExpCount" ColumnName="TRExpCount" />
+          <ScalarProperty Name="INExpCount" ColumnName="INExpCount" />
+          <ScalarProperty Name="IsSpecialistNarator" ColumnName="IsSpecialistNarator" />
+          <ScalarProperty Name="NarrationPerformance" ColumnName="NarrationPerformance" />
+          <ScalarProperty Name="MyIdentityNo" ColumnName="MyIdentityNo" />
           <ScalarProperty Name="StaffName_en" ColumnName="StaffName_en" />
           <ScalarProperty Name="StaffName_cn" ColumnName="StaffName_cn" />
           <ScalarProperty Name="StaffName_fr" ColumnName="StaffName_fr" />
@@ -4489,7 +4496,6 @@
           <ScalarProperty Name="TextSearch_tl" ColumnName="TextSearch_tl" />
           <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
           <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
-          <ScalarProperty Name="AchievementSearch" ColumnName="AchievementSearch" />
           <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
           <ScalarProperty Name="lang1ID" ColumnName="lang1ID" />
           <ScalarProperty Name="Lang1Name_en" ColumnName="Lang1Name_en" />
@@ -4551,8 +4557,6 @@
           <ScalarProperty Name="IsJapanese" ColumnName="IsJapanese" />
           <ScalarProperty Name="IsIntroVideo" ColumnName="IsIntroVideo" />
           <ScalarProperty Name="StaffActiveDays" ColumnName="StaffActiveDays" />
-          <ScalarProperty Name="SNSAccount" ColumnName="SNSAccount" />
-          <ScalarProperty Name="DtpExpCount" ColumnName="DtpExpCount" />
           <ScalarProperty Name="TechnicalSkillParent" ColumnName="TechnicalSkillParent" />
           <ScalarProperty Name="TechnicalSkillChild" ColumnName="TechnicalSkillChild" />
           <ScalarProperty Name="DevelopmentSkillParent" ColumnName="DevelopmentSkillParent" />
@@ -4561,9 +4565,7 @@
           <ScalarProperty Name="KnowledgeSkillChild" ColumnName="KnowledgeSkillChild" />
           <ScalarProperty Name="MedicalSkillParent" ColumnName="MedicalSkillParent" />
           <ScalarProperty Name="MedicalSkillChild" ColumnName="MedicalSkillChild" />
-          <ScalarProperty Name="TRExpCount" ColumnName="TRExpCount" />
           <ScalarProperty Name="TranslationUnitPrice" ColumnName="TranslationUnitPrice" />
-          <ScalarProperty Name="INExpCount" ColumnName="INExpCount" />
           <ScalarProperty Name="InterpretationUnitPricePerHourly" ColumnName="InterpretationUnitPricePerHourly" />
           <ScalarProperty Name="InterpretationUnitPricePerHalfDay" ColumnName="InterpretationUnitPricePerHalfDay" />
           <ScalarProperty Name="InterpretationUnitPriceOneDay" ColumnName="InterpretationUnitPriceOneDay" />
@@ -4571,22 +4573,23 @@
           <ScalarProperty Name="IsWhisperingInterpretation" ColumnName="IsWhisperingInterpretation" />
           <ScalarProperty Name="IsSimultaneousInterpretation" ColumnName="IsSimultaneousInterpretation" />
           <ScalarProperty Name="NRExpCount" ColumnName="NRExpCount" />
-          <ScalarProperty Name="IsSpecialistNarator" ColumnName="IsSpecialistNarator" />
-          <ScalarProperty Name="NarrationPerformance" ColumnName="NarrationPerformance" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="VW_GetAdvancedSearch_OLD">
-      <EntityTypeMapping TypeName="CentralDBModel.VW_GetAdvancedSearch_OLD">
+      <EntityTypeMapping TypeName="IsTypeOf(CentralDBModel.VW_GetAdvancedSearch_OLD)">
         <MappingFragment StoreEntitySet="VW_GetAdvancedSearch_OLD">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
           <ScalarProperty Name="StaffEmailID" ColumnName="StaffEmailID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirstName_en" ColumnName="FirstName_en" />
+          <ScalarProperty Name="NativeLanguageID" ColumnName="NativeLanguageID" />
+          <ScalarProperty Name="ForiegnLanguage1ID" ColumnName="ForiegnLanguage1ID" />
           <ScalarProperty Name="StaffTypeID" ColumnName="StaffTypeID" />
           <ScalarProperty Name="MyIdentityNo" ColumnName="MyIdentityNo" />
           <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
           <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="NickName_en" ColumnName="NickName_en" />
           <ScalarProperty Name="NickName_jp" ColumnName="NickName_jp" />
           <ScalarProperty Name="NickName_kr" ColumnName="NickName_kr" />
@@ -4594,7 +4597,6 @@
           <ScalarProperty Name="NickName_fr" ColumnName="NickName_fr" />
           <ScalarProperty Name="NickName_tl" ColumnName="NickName_tl" />
           <ScalarProperty Name="Surname" ColumnName="Surname" />
-          <ScalarProperty Name="FirstName_en" ColumnName="FirstName_en" />
           <ScalarProperty Name="FirstName_jp" ColumnName="FirstName_jp" />
           <ScalarProperty Name="FirstName_kr" ColumnName="FirstName_kr" />
           <ScalarProperty Name="FirstName_cn" ColumnName="FirstName_cn" />
@@ -4624,8 +4626,6 @@
           <ScalarProperty Name="CityOfOverseas_cn" ColumnName="CityOfOverseas_cn" />
           <ScalarProperty Name="CityOfOverseas_fr" ColumnName="CityOfOverseas_fr" />
           <ScalarProperty Name="CityOfOverseas_tl" ColumnName="CityOfOverseas_tl" />
-          <ScalarProperty Name="NativeLanguageID" ColumnName="NativeLanguageID" />
-          <ScalarProperty Name="ForiegnLanguage1ID" ColumnName="ForiegnLanguage1ID" />
           <ScalarProperty Name="ForiegnLanguage2ID" ColumnName="ForiegnLanguage2ID" />
           <ScalarProperty Name="ForiegnLanguage3ID" ColumnName="ForiegnLanguage3ID" />
           <ScalarProperty Name="ForiegnLanguage4ID" ColumnName="ForiegnLanguage4ID" />
@@ -4912,357 +4912,5 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="f_TEMP_ASTAFF_INCOMPLETE" FunctionName="CentralDBModel.Store.f_TEMP_ASTAFF_INCOMPLETE">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.f_TEMP_ASTAFF_INCOMPLETE_Result">
-          <ScalarProperty Name="RegistrationID" ColumnName="RegistrationID" />
-          <ScalarProperty Name="MyIdentityNo" ColumnName="MyIdentityNo" />
-          <ScalarProperty Name="StaffEmailID" ColumnName="StaffEmailID" />
-          <ScalarProperty Name="StaffName_en" ColumnName="StaffName_en" />
-          <ScalarProperty Name="StaffName_cn" ColumnName="StaffName_cn" />
-          <ScalarProperty Name="StaffName_fr" ColumnName="StaffName_fr" />
-          <ScalarProperty Name="StaffName_jp" ColumnName="StaffName_jp" />
-          <ScalarProperty Name="StaffName_kr" ColumnName="StaffName_kr" />
-          <ScalarProperty Name="StaffName_tl" ColumnName="StaffName_tl" />
-          <ScalarProperty Name="TelephoneNo" ColumnName="TelephoneNo" />
-          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
-          <ScalarProperty Name="Fax" ColumnName="Fax" />
-          <ScalarProperty Name="TextSearch_en" ColumnName="TextSearch_en" />
-          <ScalarProperty Name="TextSearch_cn" ColumnName="TextSearch_cn" />
-          <ScalarProperty Name="TextSearch_fr" ColumnName="TextSearch_fr" />
-          <ScalarProperty Name="TextSearch_jp" ColumnName="TextSearch_jp" />
-          <ScalarProperty Name="TextSearch_kr" ColumnName="TextSearch_kr" />
-          <ScalarProperty Name="TextSearch_tl" ColumnName="TextSearch_tl" />
-          <ScalarProperty Name="SourceOfRegistrationID" ColumnName="SourceOfRegistrationID" />
-          <ScalarProperty Name="SourceOfRegistrationName" ColumnName="SourceOfRegistrationName" />
-          <ScalarProperty Name="lang1ID" ColumnName="lang1ID" />
-          <ScalarProperty Name="Lang1Name_en" ColumnName="Lang1Name_en" />
-          <ScalarProperty Name="Lang1Name_cn" ColumnName="Lang1Name_cn" />
-          <ScalarProperty Name="Lang1Name_fr" ColumnName="Lang1Name_fr" />
-          <ScalarProperty Name="Lang1Name_jp" ColumnName="Lang1Name_jp" />
-          <ScalarProperty Name="Lang1Name_kr" ColumnName="Lang1Name_kr" />
-          <ScalarProperty Name="Lang1Name_tl" ColumnName="Lang1Name_tl" />
-          <ScalarProperty Name="ForeignLang1Level" ColumnName="ForeignLang1Level" />
-          <ScalarProperty Name="lang2ID" ColumnName="lang2ID" />
-          <ScalarProperty Name="Lang2Name_en" ColumnName="Lang2Name_en" />
-          <ScalarProperty Name="Lang2Name_cn" ColumnName="Lang2Name_cn" />
-          <ScalarProperty Name="Lang2Name_fr" ColumnName="Lang2Name_fr" />
-          <ScalarProperty Name="Lang2Name_jp" ColumnName="Lang2Name_jp" />
-          <ScalarProperty Name="Lang2Name_kr" ColumnName="Lang2Name_kr" />
-          <ScalarProperty Name="Lang2Name_tl" ColumnName="Lang2Name_tl" />
-          <ScalarProperty Name="ForeignLang2Level" ColumnName="ForeignLang2Level" />
-          <ScalarProperty Name="lang3ID" ColumnName="lang3ID" />
-          <ScalarProperty Name="Lang3Name_en" ColumnName="Lang3Name_en" />
-          <ScalarProperty Name="Lang3Name_cn" ColumnName="Lang3Name_cn" />
-          <ScalarProperty Name="Lang3Name_fr" ColumnName="Lang3Name_fr" />
-          <ScalarProperty Name="Lang3Name_jp" ColumnName="Lang3Name_jp" />
-          <ScalarProperty Name="Lang3Name_kr" ColumnName="Lang3Name_kr" />
-          <ScalarProperty Name="Lang3Name_tl" ColumnName="Lang3Name_tl" />
-          <ScalarProperty Name="ForeignLang3Level" ColumnName="ForeignLang3Level" />
-          <ScalarProperty Name="lang4ID" ColumnName="lang4ID" />
-          <ScalarProperty Name="Lang4Name_en" ColumnName="Lang4Name_en" />
-          <ScalarProperty Name="Lang4Name_cn" ColumnName="Lang4Name_cn" />
-          <ScalarProperty Name="Lang4Name_fr" ColumnName="Lang4Name_fr" />
-          <ScalarProperty Name="Lang4Name_jp" ColumnName="Lang4Name_jp" />
-          <ScalarProperty Name="Lang4Name_kr" ColumnName="Lang4Name_kr" />
-          <ScalarProperty Name="Lang4Name_tl" ColumnName="Lang4Name_tl" />
-          <ScalarProperty Name="ForeignLang4Level" ColumnName="ForeignLang4Level" />
-          <ScalarProperty Name="Sex" ColumnName="Sex" />
-          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
-          <ScalarProperty Name="Age" ColumnName="Age" />
-          <ScalarProperty Name="NationalityID" ColumnName="NationalityID" />
-          <ScalarProperty Name="NationalityName_en" ColumnName="NationalityName_en" />
-          <ScalarProperty Name="NationalityName_cn" ColumnName="NationalityName_cn" />
-          <ScalarProperty Name="NationalityName_fr" ColumnName="NationalityName_fr" />
-          <ScalarProperty Name="NationalityName_jp" ColumnName="NationalityName_jp" />
-          <ScalarProperty Name="NationalityName_kr" ColumnName="NationalityName_kr" />
-          <ScalarProperty Name="NationalityName_tl" ColumnName="NationalityName_tl" />
-          <ScalarProperty Name="VisaCountryID" ColumnName="VisaCountryID" />
-          <ScalarProperty Name="VisaCountryName_en" ColumnName="VisaCountryName_en" />
-          <ScalarProperty Name="VisaCountryName_cn" ColumnName="VisaCountryName_cn" />
-          <ScalarProperty Name="VisaCountryName_fr" ColumnName="VisaCountryName_fr" />
-          <ScalarProperty Name="VisaCountryName_jp" ColumnName="VisaCountryName_jp" />
-          <ScalarProperty Name="VisaCountryName_kr" ColumnName="VisaCountryName_kr" />
-          <ScalarProperty Name="VisaCountryName_tl" ColumnName="VisaCountryName_tl" />
-          <ScalarProperty Name="VisaTypeID" ColumnName="VisaTypeID" />
-          <ScalarProperty Name="VisaTypeName_en" ColumnName="VisaTypeName_en" />
-          <ScalarProperty Name="VisaTypeName_cn" ColumnName="VisaTypeName_cn" />
-          <ScalarProperty Name="VisaTypeName_fr" ColumnName="VisaTypeName_fr" />
-          <ScalarProperty Name="VisaTypeName_jp" ColumnName="VisaTypeName_jp" />
-          <ScalarProperty Name="VisaTypeName_kr" ColumnName="VisaTypeName_kr" />
-          <ScalarProperty Name="VisaTypeName_tl" ColumnName="VisaTypeName_tl" />
-          <ScalarProperty Name="VisaExpire" ColumnName="VisaExpire" />
-          <ScalarProperty Name="IsJapanese" ColumnName="IsJapanese" />
-          <ScalarProperty Name="IsIntroVideo" ColumnName="IsIntroVideo" />
-          <ScalarProperty Name="StaffActiveDays" ColumnName="StaffActiveDays" />
-          <ScalarProperty Name="SNSAccount" ColumnName="SNSAccount" />
-          <ScalarProperty Name="DtpExpCount" ColumnName="DtpExpCount" />
-          <ScalarProperty Name="TechnicalSkillParent" ColumnName="TechnicalSkillParent" />
-          <ScalarProperty Name="TechnicalSkillChild" ColumnName="TechnicalSkillChild" />
-          <ScalarProperty Name="DevelopmentSkillParent" ColumnName="DevelopmentSkillParent" />
-          <ScalarProperty Name="DevelopmentSkillChild" ColumnName="DevelopmentSkillChild" />
-          <ScalarProperty Name="KnowledgeSkillParent" ColumnName="KnowledgeSkillParent" />
-          <ScalarProperty Name="KnowledgeSkillChild" ColumnName="KnowledgeSkillChild" />
-          <ScalarProperty Name="MedicalSkillParent" ColumnName="MedicalSkillParent" />
-          <ScalarProperty Name="MedicalSkillChild" ColumnName="MedicalSkillChild" />
-          <ScalarProperty Name="Column1" ColumnName="Column1" />
-          <ScalarProperty Name="TranslationUnitPrice" ColumnName="TranslationUnitPrice" />
-          <ScalarProperty Name="INExpCount" ColumnName="INExpCount" />
-          <ScalarProperty Name="InterpretationUnitPricePerHourly" ColumnName="InterpretationUnitPricePerHourly" />
-          <ScalarProperty Name="InterpretationUnitPricePerHalfDay" ColumnName="InterpretationUnitPricePerHalfDay" />
-          <ScalarProperty Name="InterpretationUnitPriceOneDay" ColumnName="InterpretationUnitPriceOneDay" />
-          <ScalarProperty Name="NRExpCount" ColumnName="NRExpCount" />
-          <ScalarProperty Name="IsSpecialistNarator" ColumnName="IsSpecialistNarator" />
-          <ScalarProperty Name="NarrationPerformance" ColumnName="NarrationPerformance" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="SP_AllTranslation_History" FunctionName="CentralDBModel.Store.SP_AllTranslation_History">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.SP_AllTranslation_History_Result">
-          <ScalarProperty Name="OnlineTranslation" ColumnName="OnlineTranslation" />
-          <ScalarProperty Name="AppointedTranslation" ColumnName="AppointedTranslation" />
-          <ScalarProperty Name="NativeTranslation" ColumnName="NativeTranslation" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="CentralDBModel.Store.sp_alterdiagram" />
-    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="CentralDBModel.Store.sp_creatediagram" />
-    <FunctionImportMapping FunctionImportName="SP_CreateErrorlog" FunctionName="CentralDBModel.Store.SP_CreateErrorlog" />
-    <FunctionImportMapping FunctionImportName="SP_Dashboard_SAdmin" FunctionName="CentralDBModel.Store.SP_Dashboard_SAdmin">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.SP_Dashboard_SAdmin_Result">
-          <ScalarProperty Name="jpSales" ColumnName="jpSales" />
-          <ScalarProperty Name="jpPredictedSales" ColumnName="jpPredictedSales" />
-          <ScalarProperty Name="jpOrderCompleted" ColumnName="jpOrderCompleted" />
-          <ScalarProperty Name="jpGrossProfit" ColumnName="jpGrossProfit" />
-          <ScalarProperty Name="jpGrossProfitRate" ColumnName="jpGrossProfitRate" />
-          <ScalarProperty Name="jpSalesPeviousMonth" ColumnName="jpSalesPeviousMonth" />
-          <ScalarProperty Name="jpSalesRatePrevMonth" ColumnName="jpSalesRatePrevMonth" />
-          <ScalarProperty Name="jpSalesPeviousYear" ColumnName="jpSalesPeviousYear" />
-          <ScalarProperty Name="jpSalesRatePrevYear" ColumnName="jpSalesRatePrevYear" />
-          <ScalarProperty Name="jpStaffPaymentCurrMonth" ColumnName="jpStaffPaymentCurrMonth" />
-          <ScalarProperty Name="jpOutstandingSalesCurrMonth" ColumnName="jpOutstandingSalesCurrMonth" />
-          <ScalarProperty Name="jpAvgOrderedPrice" ColumnName="jpAvgOrderedPrice" />
-          <ScalarProperty Name="jpStaffPaymentLastMonth" ColumnName="jpStaffPaymentLastMonth" />
-          <ScalarProperty Name="crSales" ColumnName="crSales" />
-          <ScalarProperty Name="crPredictedSales" ColumnName="crPredictedSales" />
-          <ScalarProperty Name="crOrderCompleted" ColumnName="crOrderCompleted" />
-          <ScalarProperty Name="crGrossProfit" ColumnName="crGrossProfit" />
-          <ScalarProperty Name="crGrossProfitRate" ColumnName="crGrossProfitRate" />
-          <ScalarProperty Name="crSalesPeviousMonth" ColumnName="crSalesPeviousMonth" />
-          <ScalarProperty Name="crSalesRatePrevMonth" ColumnName="crSalesRatePrevMonth" />
-          <ScalarProperty Name="crSalesPeviousYear" ColumnName="crSalesPeviousYear" />
-          <ScalarProperty Name="crSalesRatePrevYear" ColumnName="crSalesRatePrevYear" />
-          <ScalarProperty Name="crStaffPaymentCurrMonth" ColumnName="crStaffPaymentCurrMonth" />
-          <ScalarProperty Name="crOutstandingSalesCurrMonth" ColumnName="crOutstandingSalesCurrMonth" />
-          <ScalarProperty Name="crAvgOrderedPrice" ColumnName="crAvgOrderedPrice" />
-          <ScalarProperty Name="crStaffPaymentLastMonth" ColumnName="crStaffPaymentLastMonth" />
-          <ScalarProperty Name="krSales" ColumnName="krSales" />
-          <ScalarProperty Name="krPredictedSales" ColumnName="krPredictedSales" />
-          <ScalarProperty Name="krOrderCompleted" ColumnName="krOrderCompleted" />
-          <ScalarProperty Name="krGrossProfit" ColumnName="krGrossProfit" />
-          <ScalarProperty Name="krGrossProfitRate" ColumnName="krGrossProfitRate" />
-          <ScalarProperty Name="krSalesPeviousMonth" ColumnName="krSalesPeviousMonth" />
-          <ScalarProperty Name="krSalesRatePrevMonth" ColumnName="krSalesRatePrevMonth" />
-          <ScalarProperty Name="krSalesPeviousYear" ColumnName="krSalesPeviousYear" />
-          <ScalarProperty Name="krSalesRatePrevYear" ColumnName="krSalesRatePrevYear" />
-          <ScalarProperty Name="krStaffPaymentCurrMonth" ColumnName="krStaffPaymentCurrMonth" />
-          <ScalarProperty Name="krOutstandingSalesCurrMonth" ColumnName="krOutstandingSalesCurrMonth" />
-          <ScalarProperty Name="krAvgOrderedPrice" ColumnName="krAvgOrderedPrice" />
-          <ScalarProperty Name="krStaffPaymentLastMonth" ColumnName="krStaffPaymentLastMonth" />
-          <ScalarProperty Name="phSales" ColumnName="phSales" />
-          <ScalarProperty Name="phPredictedSales" ColumnName="phPredictedSales" />
-          <ScalarProperty Name="phOrderCompleted" ColumnName="phOrderCompleted" />
-          <ScalarProperty Name="phGrossProfit" ColumnName="phGrossProfit" />
-          <ScalarProperty Name="phGrossProfitRate" ColumnName="phGrossProfitRate" />
-          <ScalarProperty Name="phSalesPeviousMonth" ColumnName="phSalesPeviousMonth" />
-          <ScalarProperty Name="phSalesRatePrevMonth" ColumnName="phSalesRatePrevMonth" />
-          <ScalarProperty Name="phSalesPeviousYear" ColumnName="phSalesPeviousYear" />
-          <ScalarProperty Name="phSalesRatePrevYear" ColumnName="phSalesRatePrevYear" />
-          <ScalarProperty Name="phStaffPaymentCurrMonth" ColumnName="phStaffPaymentCurrMonth" />
-          <ScalarProperty Name="phOutstandingSalesCurrMonth" ColumnName="phOutstandingSalesCurrMonth" />
-          <ScalarProperty Name="phAvgOrderedPrice" ColumnName="phAvgOrderedPrice" />
-          <ScalarProperty Name="phStaffPaymentLastMonth" ColumnName="phStaffPaymentLastMonth" />
-          <ScalarProperty Name="bdSales" ColumnName="bdSales" />
-          <ScalarProperty Name="bdPredictedSales" ColumnName="bdPredictedSales" />
-          <ScalarProperty Name="bdOrderCompleted" ColumnName="bdOrderCompleted" />
-          <ScalarProperty Name="bdGrossProfit" ColumnName="bdGrossProfit" />
-          <ScalarProperty Name="bdGrossProfitRate" ColumnName="bdGrossProfitRate" />
-          <ScalarProperty Name="bdSalesPeviousMonth" ColumnName="bdSalesPeviousMonth" />
-          <ScalarProperty Name="bdSalesRatePrevMonth" ColumnName="bdSalesRatePrevMonth" />
-          <ScalarProperty Name="bdSalesPeviousYear" ColumnName="bdSalesPeviousYear" />
-          <ScalarProperty Name="bdSalesRatePrevYear" ColumnName="bdSalesRatePrevYear" />
-          <ScalarProperty Name="bdStaffPaymentCurrMonth" ColumnName="bdStaffPaymentCurrMonth" />
-          <ScalarProperty Name="bdOutstandingSalesCurrMonth" ColumnName="bdOutstandingSalesCurrMonth" />
-          <ScalarProperty Name="bdAvgOrderedPrice" ColumnName="bdAvgOrderedPrice" />
-          <ScalarProperty Name="bdStaffPaymentLastMonth" ColumnName="bdStaffPaymentLastMonth" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="SP_DeleteAgentBusiness" FunctionName="CentralDBModel.Store.SP_DeleteAgentBusiness" />
-    <FunctionImportMapping FunctionImportName="SP_DeleteAgentCharacterstics" FunctionName="CentralDBModel.Store.SP_DeleteAgentCharacterstics" />
-    <FunctionImportMapping FunctionImportName="SP_DeleteAgentFreeDesignation" FunctionName="CentralDBModel.Store.SP_DeleteAgentFreeDesignation" />
-    <FunctionImportMapping FunctionImportName="SP_DeleteCompanyBusinessService" FunctionName="CentralDBModel.Store.SP_DeleteCompanyBusinessService" />
-    <FunctionImportMapping FunctionImportName="SP_DeleteCompanyBusinessSpeciality" FunctionName="CentralDBModel.Store.SP_DeleteCompanyBusinessSpeciality" />
-    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="CentralDBModel.Store.sp_dropdiagram" />
-    <FunctionImportMapping FunctionImportName="SP_GetAdvancedSearch" FunctionName="CentralDBModel.Store.SP_GetAdvancedSearch" />
-    <FunctionImportMapping FunctionImportName="SP_GetAdvancedStaffSearchData" FunctionName="CentralDBModel.Store.SP_GetAdvancedStaffSearchData" />
-    <FunctionImportMapping FunctionImportName="SP_GetAdvancedStaffSearchData_OLD" FunctionName="CentralDBModel.Store.SP_GetAdvancedStaffSearchData_OLD" />
-    <FunctionImportMapping FunctionImportName="SP_GetAdvancedStaffSearchInit" FunctionName="CentralDBModel.Store.SP_GetAdvancedStaffSearchInit" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllAgentBusiness" FunctionName="CentralDBModel.Store.SP_GetAllAgentBusiness" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllAgentCharacterstics" FunctionName="CentralDBModel.Store.SP_GetAllAgentCharacterstics" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllAgentFreeDesignation" FunctionName="CentralDBModel.Store.SP_GetAllAgentFreeDesignation" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllCompany" FunctionName="CentralDBModel.Store.SP_GetAllCompany" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllCompanyBusinessService" FunctionName="CentralDBModel.Store.SP_GetAllCompanyBusinessService" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllCompanyBusinessSpeciality" FunctionName="CentralDBModel.Store.SP_GetAllCompanyBusinessSpeciality" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllEmployee" FunctionName="CentralDBModel.Store.SP_GetAllEmployee" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllEstimation" FunctionName="CentralDBModel.Store.SP_GetAllEstimation" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllEstimationActions" FunctionName="CentralDBModel.Store.SP_GetAllEstimationActions" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllEstimationActionType" FunctionName="CentralDBModel.Store.SP_GetAllEstimationActionType">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.SP_GetAllEstimationActionType_Result">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Type" ColumnName="Type" />
-          <ScalarProperty Name="ActionText" ColumnName="ActionText" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="SP_GetAllEstimationDetails" FunctionName="CentralDBModel.Store.SP_GetAllEstimationDetails" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllEstimationDetails_2017_09_23" FunctionName="CentralDBModel.Store.SP_GetAllEstimationDetails_2017_09_23" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllEstimationFiles" FunctionName="CentralDBModel.Store.SP_GetAllEstimationFiles">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.SP_GetAllEstimationFiles_Result">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="EstimateID" ColumnName="EstimateID" />
-          <ScalarProperty Name="EstimateDetailsID" ColumnName="EstimateDetailsID" />
-          <ScalarProperty Name="FileName" ColumnName="FileName" />
-          <ScalarProperty Name="DownloadURL" ColumnName="DownloadURL" />
-          <ScalarProperty Name="TranslationText" ColumnName="TranslationText" />
-          <ScalarProperty Name="WordCount" ColumnName="WordCount" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="SP_GetAllOrders_Web" FunctionName="CentralDBModel.Store.SP_GetAllOrders_Web" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllOrderStaffAllowance" FunctionName="CentralDBModel.Store.SP_GetAllOrderStaffAllowance">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.SP_GetAllOrderStaffAllowance_Result">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="EstimationID" ColumnName="EstimationID" />
-          <ScalarProperty Name="AllowanceType" ColumnName="AllowanceType" />
-          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
-          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
-          <ScalarProperty Name="NoOfPersons" ColumnName="NoOfPersons" />
-          <ScalarProperty Name="NoOfDays" ColumnName="NoOfDays" />
-          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
-          <ScalarProperty Name="IsCompleteSet" ColumnName="IsCompleteSet" />
-          <ScalarProperty Name="IsExclTax" ColumnName="IsExclTax" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="SP_GetAllStaffJobCategory" FunctionName="CentralDBModel.Store.SP_GetAllStaffJobCategory" />
-    <FunctionImportMapping FunctionImportName="SP_GetAllTranslationCertificateSettings" FunctionName="CentralDBModel.Store.SP_GetAllTranslationCertificateSettings">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.SP_GetAllTranslationCertificateSettings_Result">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="CertificateType" ColumnName="CertificateType" />
-          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="SP_GetAllTranslators_By_Search" FunctionName="CentralDBModel.Store.SP_GetAllTranslators_By_Search" />
-    <FunctionImportMapping FunctionImportName="SP_GetAppointedOrders_Web" FunctionName="CentralDBModel.Store.SP_GetAppointedOrders_Web" />
-    <FunctionImportMapping FunctionImportName="SP_GetApprovalEstimation" FunctionName="CentralDBModel.Store.SP_GetApprovalEstimation" />
-    <FunctionImportMapping FunctionImportName="SP_GetHomeSearchData" FunctionName="CentralDBModel.Store.SP_GetHomeSearchData" />
-    <FunctionImportMapping FunctionImportName="SP_GetHomeSearchData_Order" FunctionName="CentralDBModel.Store.SP_GetHomeSearchData_Order" />
-    <FunctionImportMapping FunctionImportName="SP_GetOrderWebDocuments" FunctionName="CentralDBModel.Store.SP_GetOrderWebDocuments">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.SP_GetOrderWebDocuments_Result">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="FileDescription" ColumnName="FileDescription" />
-          <ScalarProperty Name="DownloadURL" ColumnName="DownloadURL" />
-          <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="SP_GetPaypalPaymentID" FunctionName="CentralDBModel.Store.SP_GetPaypalPaymentID" />
-    <FunctionImportMapping FunctionImportName="SP_GetProfessionalSpeciality" FunctionName="CentralDBModel.Store.SP_GetProfessionalSpeciality" />
-    <FunctionImportMapping FunctionImportName="SP_GetSearchAllEmployee" FunctionName="CentralDBModel.Store.SP_GetSearchAllEmployee" />
-    <FunctionImportMapping FunctionImportName="SP_GetSoftwareSkills" FunctionName="CentralDBModel.Store.SP_GetSoftwareSkills" />
-    <FunctionImportMapping FunctionImportName="SP_GetSpecificEstimation" FunctionName="CentralDBModel.Store.SP_GetSpecificEstimation" />
-    <FunctionImportMapping FunctionImportName="SP_GetStaffID" FunctionName="CentralDBModel.Store.SP_GetStaffID" />
-    <FunctionImportMapping FunctionImportName="SP_GetStaffList" FunctionName="CentralDBModel.Store.SP_GetStaffList">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.SP_GetStaffList_Result">
-          <ScalarProperty Name="StaffNo" ColumnName="StaffNo" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
-          <ScalarProperty Name="Gender" ColumnName="Gender" />
-          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
-          <ScalarProperty Name="LivingCountry" ColumnName="LivingCountry" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="SP_GetStaffPayment" FunctionName="CentralDBModel.Store.SP_GetStaffPayment" />
-    <FunctionImportMapping FunctionImportName="SP_GetTranslatorByEmail" FunctionName="CentralDBModel.Store.SP_GetTranslatorByEmail" />
-    <FunctionImportMapping FunctionImportName="SP_GetTranslatorDetailsByID" FunctionName="CentralDBModel.Store.SP_GetTranslatorDetailsByID" />
-    <FunctionImportMapping FunctionImportName="SP_GetTransproLanguagePriceCategory" FunctionName="CentralDBModel.Store.SP_GetTransproLanguagePriceCategory" />
-    <FunctionImportMapping FunctionImportName="SP_GetTransproLanguagePriceDetails" FunctionName="CentralDBModel.Store.SP_GetTransproLanguagePriceDetails" />
-    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="CentralDBModel.Store.sp_helpdiagramdefinition">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.sp_helpdiagramdefinition_Result">
-          <ScalarProperty Name="version" ColumnName="version" />
-          <ScalarProperty Name="definition" ColumnName="definition" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="CentralDBModel.Store.sp_helpdiagrams">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="CentralDBModel.sp_helpdiagrams_Result">
-          <ScalarProperty Name="Database" ColumnName="Database" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Owner" ColumnName="Owner" />
-          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="SP_OrderDetails" FunctionName="CentralDBModel.Store.SP_OrderDetails" />
-    <FunctionImportMapping FunctionImportName="SP_OrderOperation_Translator" FunctionName="CentralDBModel.Store.SP_OrderOperation_Translator" />
-    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="CentralDBModel.Store.sp_renamediagram" />
-    <FunctionImportMapping FunctionImportName="SP_RetrieveNextIdentity" FunctionName="CentralDBModel.Store.SP_RetrieveNextIdentity" />
-    <FunctionImportMapping FunctionImportName="SP_RetrieveNextSequenceFor" FunctionName="CentralDBModel.Store.SP_RetrieveNextSequenceFor" />
-    <FunctionImportMapping FunctionImportName="SP_SaveAgentBusiness" FunctionName="CentralDBModel.Store.SP_SaveAgentBusiness" />
-    <FunctionImportMapping FunctionImportName="SP_SaveAgentCharacterstics" FunctionName="CentralDBModel.Store.SP_SaveAgentCharacterstics" />
-    <FunctionImportMapping FunctionImportName="SP_SaveAgentFreeDesignation" FunctionName="CentralDBModel.Store.SP_SaveAgentFreeDesignation" />
-    <FunctionImportMapping FunctionImportName="SP_SaveCompanyBusinessService" FunctionName="CentralDBModel.Store.SP_SaveCompanyBusinessService" />
-    <FunctionImportMapping FunctionImportName="SP_SaveCompanyBusinessSpeciality" FunctionName="CentralDBModel.Store.SP_SaveCompanyBusinessSpeciality" />
-    <FunctionImportMapping FunctionImportName="SP_SaveDeleteCompany" FunctionName="CentralDBModel.Store.SP_SaveDeleteCompany" />
-    <FunctionImportMapping FunctionImportName="SP_SaveDeleteEmployee" FunctionName="CentralDBModel.Store.SP_SaveDeleteEmployee" />
-    <FunctionImportMapping FunctionImportName="SP_SaveDeleteOrderWeb" FunctionName="CentralDBModel.Store.SP_SaveDeleteOrderWeb" />
-    <FunctionImportMapping FunctionImportName="SP_SaveDeleteOrderWebDocuments" FunctionName="CentralDBModel.Store.SP_SaveDeleteOrderWebDocuments" />
-    <FunctionImportMapping FunctionImportName="SP_SaveDeletePaypalTransaction" FunctionName="CentralDBModel.Store.SP_SaveDeletePaypalTransaction" />
-    <FunctionImportMapping FunctionImportName="SP_SaveDeleteTransproLanguagePriceCategory" FunctionName="CentralDBModel.Store.SP_SaveDeleteTransproLanguagePriceCategory" />
-    <FunctionImportMapping FunctionImportName="SP_SaveDeleteTransproLanguagePriceDetails" FunctionName="CentralDBModel.Store.SP_SaveDeleteTransproLanguagePriceDetails" />
-    <FunctionImportMapping FunctionImportName="SP_SaveEstimation" FunctionName="CentralDBModel.Store.SP_SaveEstimation" />
-    <FunctionImportMapping FunctionImportName="SP_SaveEstimationActions" FunctionName="CentralDBModel.Store.SP_SaveEstimationActions" />
-    <FunctionImportMapping FunctionImportName="SP_SaveEstimationDetails" FunctionName="CentralDBModel.Store.SP_SaveEstimationDetails" />
-    <FunctionImportMapping FunctionImportName="SP_SaveEstimationFiles" FunctionName="CentralDBModel.Store.SP_SaveEstimationFiles" />
-    <FunctionImportMapping FunctionImportName="SP_SaveOrder" FunctionName="CentralDBModel.Store.SP_SaveOrder" />
-    <FunctionImportMapping FunctionImportName="SP_SaveOrderStaffAllowance" FunctionName="CentralDBModel.Store.SP_SaveOrderStaffAllowance" />
-    <FunctionImportMapping FunctionImportName="SP_SetNewPassword" FunctionName="CentralDBModel.Store.SP_SetNewPassword" />
-    <FunctionImportMapping FunctionImportName="SP_UpdateEmployee" FunctionName="CentralDBModel.Store.SP_UpdateEmployee" />
-    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="CentralDBModel.Store.sp_upgraddiagrams" />
-    <FunctionImportMapping FunctionImportName="USP_GetAdditionalOperationPermissionList" FunctionName="CentralDBModel.Store.USP_GetAdditionalOperationPermissionList" />
-    <FunctionImportMapping FunctionImportName="USP_GetAdditionalScreenPermissionList" FunctionName="CentralDBModel.Store.USP_GetAdditionalScreenPermissionList" />
-    <FunctionImportMapping FunctionImportName="USP_GetNextId" FunctionName="CentralDBModel.Store.USP_GetNextId" />
-    <FunctionImportMapping FunctionImportName="USP_GetRoleWiseOperationPermissionList" FunctionName="CentralDBModel.Store.USP_GetRoleWiseOperationPermissionList" />
-    <FunctionImportMapping FunctionImportName="USP_GetRoleWiseScreenPermissionList" FunctionName="CentralDBModel.Store.USP_GetRoleWiseScreenPermissionList" />
-    <FunctionImportMapping FunctionImportName="USP_GetScreenList" FunctionName="CentralDBModel.Store.USP_GetScreenList" />
-    <FunctionImportMapping FunctionImportName="USP_GetScreenOperationList" FunctionName="CentralDBModel.Store.USP_GetScreenOperationList" />
-    <FunctionImportMapping FunctionImportName="USP_GetUserDetails" FunctionName="CentralDBModel.Store.USP_GetUserDetails" />
-    <FunctionImportMapping FunctionImportName="USP_GetUsers" FunctionName="CentralDBModel.Store.USP_GetUsers" />
   </EntityContainerMapping>
 </Mapping>

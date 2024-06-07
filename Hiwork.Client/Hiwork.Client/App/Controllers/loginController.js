@@ -78,6 +78,7 @@
         return params
     };
     $scope.languageChanged = function (selectLanguage) {
+       
         translatorService.setCurrentLanguage(selectLanguage);
     };
 
